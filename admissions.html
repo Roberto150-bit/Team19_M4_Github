@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Admissions
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+-->
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>Admissions | Quinnelle University</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface font-manrope text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a><a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105" href="admissions.html">Admissions</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center px-12 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Stately brick university administration building with large columns surrounded by lush green lawns and ancient oak trees in warm afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsJj1HsidmyuDlWp1EnNN15q1vAn533es1eoXiC9wcOlnzSp0y1x8hfkOBj8bJ3pYY7Y1xEZ2B9gJtmdEaHLLH5AB7o5fXD40e6mdG9e5o7RoqPCnVEnJAQeEazlnO4fcQREhuK5YquiR3rW83H-u2Mx6vFlu2x5bMSSoNjS3DCqOSiGQsOAjuUt5cy_55Sv7slO4u-EW73Zw2SBAupC8brm6D21uz7G07kkif2TLyF0i-XkCdlG26453hTXjseghsG4L31qiOnFI"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#fdf8f7] via-[#fdf8f7]/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-2xl">
+<span class="text-secondary font-bold tracking-widest uppercase text-sm mb-4 block">Future Awaits</span>
+<h1 class="font-headline text-6xl md:text-7xl font-extrabold text-primary leading-[1.1] tracking-tight mb-6">Begin Your Journey at Quinnelle</h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+                    Discover a community where academic excellence meets visionary thinking. Your path to a meaningful career starts in the heart of our historic campus.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary-container to-secondary text-on-primary px-8 py-4 rounded-xl font-bold hover:scale-[1.02] active:scale-95 transition-all duration-250 shadow-xl flex items-center gap-2">
+                        Inquire Today <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold hover:scale-[1.02] active:scale-95 transition-all duration-250">
+                        Virtual Tour
+                    </button>
+</div>
+</div>
+</section>
+<!-- Talk to an Expert -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center max-w-3xl mx-auto">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Talk to an Admissions Expert</h2>
+<p class="text-on-surface-variant">We're here to guide you through every step of the process. Reach out to our dedicated team for personalized assistance.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Email Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(28,27,27,0.06)] border-b-4 border-secondary/20 hover:border-secondary transition-all group">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Email Us</h3>
+<p class="text-on-surface-variant mb-6">For detailed inquiries about programs and requirements.</p>
+<a class="text-secondary font-bold hover:underline" href="mailto:admissions@quinnelle.edu">admissions@quinnelle.edu</a>
+</div>
+<!-- Phone Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(28,27,27,0.06)] border-b-4 border-secondary/20 hover:border-secondary transition-all group">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Call Us</h3>
+<p class="text-on-surface-variant mb-6">Direct line for immediate questions and guidance.</p>
+<a class="text-secondary font-bold hover:underline" href="tel:+1800784663553">+1 800-QUINNELLE</a>
+</div>
+<!-- Office Hours Card -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(28,27,27,0.06)] border-b-4 border-secondary/20 hover:border-secondary transition-all group">
+<div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-6 text-secondary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-2">Office Hours</h3>
+<p class="text-on-surface-variant mb-2">Mon — Fri: 8 AM - 6 PM</p>
+<p class="text-on-surface-variant">Sat: 10 AM - 2 PM (Virtual Only)</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Schedule an Appointment -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2">
+<h2 class="font-headline text-4xl font-bold text-primary mb-6">Schedule an Appointment</h2>
+<p class="text-on-surface-variant text-lg mb-8">Ready to take the next step? Book a personalized 1-on-1 session with an admissions officer. Choose between an in-person campus visit or a virtual consultation from anywhere in the world.</p>
+<ul class="space-y-4 mb-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Direct access to faculty and current students</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Customized campus tour routes</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Financial aid and scholarship counseling</span>
+</li>
+</ul>
+<button class="bg-gradient-to-r from-primary-container to-secondary text-on-primary px-8 py-4 rounded-xl font-bold hover:scale-[1.02] active:scale-95 transition-all duration-250 shadow-xl">
+                        Book Your Session
+                    </button>
+</div>
+<div class="lg:w-1/2 w-full">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-xl overflow-hidden relative">
+<div class="flex justify-between items-center mb-8">
+<h4 class="font-headline font-bold text-xl">October 2024</h4>
+<div class="flex gap-2">
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<button class="p-2 hover:bg-surface-container rounded-full transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center text-xs font-bold text-outline mb-4">
+<div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+</div>
+<div class="grid grid-cols-7 gap-2 text-center">
+<div class="py-4 opacity-20">29</div><div class="py-4 opacity-20">30</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">1</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">2</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">3</div>
+<div class="py-4 rounded-lg bg-secondary text-on-secondary font-bold shadow-md">4</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">5</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">6</div>
+<div class="py-4 rounded-lg bg-tertiary-fixed text-tertiary-container font-bold">7</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">8</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">9</div>
+<div class="py-4 rounded-lg bg-secondary text-on-secondary font-bold shadow-md">10</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">11</div>
+<div class="py-4 rounded-lg hover:bg-surface-container cursor-pointer transition-colors">12</div>
+<!-- ... simplified for visual ... -->
+<div class="col-span-7 mt-6 p-4 bg-tertiary-fixed/30 rounded-lg text-sm text-tertiary-container font-medium flex items-center gap-3">
+<span class="material-symbols-outlined">event_available</span>
+                                Tomorrow: Virtual Open House (3 Spots Left)
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Admissions Timeline -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-20 text-center">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">The Path to Quinnelle</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Your journey from curious inquirer to Quinnelle student, simplified.</p>
+</div>
+<div class="relative">
+<div class="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-surface-container-highest -translate-y-1/2 z-0"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+<div class="bg-surface p-6 text-center lg:text-left">
+<div class="w-16 h-16 bg-primary-container text-on-primary rounded-full flex items-center justify-center font-headline text-2xl font-bold mx-auto lg:mx-0 mb-6 border-4 border-surface shadow-lg">1</div>
+<h3 class="font-headline font-bold text-xl mb-3">Inquire</h3>
+<p class="text-on-surface-variant text-sm">Fill out our interest form to receive program brochures and custom event invites.</p>
+</div>
+<div class="bg-surface p-6 text-center lg:text-left">
+<div class="w-16 h-16 bg-primary-container text-on-primary rounded-full flex items-center justify-center font-headline text-2xl font-bold mx-auto lg:mx-0 mb-6 border-4 border-surface shadow-lg">2</div>
+<h3 class="font-headline font-bold text-xl mb-3">Connect</h3>
+<p class="text-on-surface-variant text-sm">Attend a webinar or visit campus for a personalized one-on-one session.</p>
+</div>
+<div class="bg-surface p-6 text-center lg:text-left">
+<div class="w-16 h-16 bg-primary-container text-on-primary rounded-full flex items-center justify-center font-headline text-2xl font-bold mx-auto lg:mx-0 mb-6 border-4 border-surface shadow-lg">3</div>
+<h3 class="font-headline font-bold text-xl mb-3">Apply</h3>
+<p class="text-on-surface-variant text-sm">Submit your portfolio, transcripts, and personal statement via our portal.</p>
+</div>
+<div class="bg-surface p-6 text-center lg:text-left">
+<div class="w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center font-headline text-2xl font-bold mx-auto lg:mx-0 mb-6 border-4 border-surface shadow-lg">4</div>
+<h3 class="font-headline font-bold text-xl mb-3">Onboard</h3>
+<p class="text-on-surface-variant text-sm">Receive your decision, confirm enrollment, and join the Luminary community.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Quick-links -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Common Questions</h2>
+<p class="text-on-surface-variant">Finding the right university is a big decision. We've compiled the most frequent questions from prospective students to help you find answers fast.</p>
+</div>
+<button class="bg-surface-container-highest text-primary font-bold px-8 py-3 rounded-xl hover:bg-outline-variant/20 transition-colors flex items-center gap-2">
+                        View Full Help Center <span class="material-symbols-outlined">open_in_new</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<a class="group p-8 bg-surface-container-lowest rounded-xl flex justify-between items-center hover:shadow-xl transition-all" href="#">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">payments</span>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Financial Aid &amp; Scholarships</h4>
+<p class="text-on-surface-variant text-sm">Explore aid options and merit-based grants.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all">chevron_right</span>
+</a>
+<a class="group p-8 bg-surface-container-lowest rounded-xl flex justify-between items-center hover:shadow-xl transition-all" href="#">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">map</span>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Campus Tours &amp; Housing</h4>
+<p class="text-on-surface-variant text-sm">Book a stay and explore our residential halls.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all">chevron_right</span>
+</a>
+<a class="group p-8 bg-surface-container-lowest rounded-xl flex justify-between items-center hover:shadow-xl transition-all" href="#">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">event_upcoming</span>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">Application Deadlines</h4>
+<p class="text-on-surface-variant text-sm">Key dates for early decision and regular admission.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all">chevron_right</span>
+</a>
+<a class="group p-8 bg-surface-container-lowest rounded-xl flex justify-between items-center hover:shadow-xl transition-all" href="#">
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-secondary text-3xl">language</span>
+<div>
+<h4 class="font-headline font-bold text-lg mb-1">International Students</h4>
+<p class="text-on-surface-variant text-sm">Visa requirements and global student support.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 px-12 bg-primary">
+<div class="max-w-7xl mx-auto bg-gradient-to-br from-primary-container to-secondary rounded-[2rem] p-12 lg:p-20 text-center relative overflow-hidden shadow-2xl">
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-fixed/10 blur-[100px] rounded-full -mr-32 -mt-32"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary-fixed/10 blur-[100px] rounded-full -ml-32 -mb-32"></div>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-primary mb-6 relative z-10">Your future starts with a single step.</h2>
+<p class="text-on-primary-container font-bold text-lg md:text-xl mb-12 max-w-2xl mx-auto opacity-90 relative z-10">Join a legacy of leaders, creators, and innovators. Inquire today and discover your Quinnelle.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center relative z-10">
+<button class="bg-surface-container-lowest text-primary px-10 py-4 rounded-xl font-extrabold hover:scale-105 active:scale-95 transition-all duration-250 shadow-xl w-full sm:w-auto">
+                        Inquire Now
+                    </button>
+<button class="bg-transparent border-2 border-on-primary text-on-primary px-10 py-4 rounded-xl font-extrabold hover:bg-on-primary hover:text-primary transition-all duration-250 w-full sm:w-auto">
+                        Schedule a Visit
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>

@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Campus life
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+-->
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8"><a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a></div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] w-full overflow-hidden flex items-center px-8 lg:px-20">
+<div class="absolute inset-0 z-0">
+<img alt="Campus Life" class="w-full h-full object-cover" data-alt="Vibrant wide shot of students laughing and talking on a sun-drenched university quad with historic brick buildings and green trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQvJ5PkFqop5wWeO1dkCc9o7gFzAr4LLob8KL_87BdW9bfd6GxBZp2UPGsJBleL2Cqnbunx2qu0oJhqo2iUbR8dYBxaH428X1IjIErvG1AOUQIaNzYADG80uRE8rukCCM4ZV2ja_0qMDRmgYvuit_zGYwbrGlw89qHghx20iBfwnGz_bt1rzZjMPu-3bYBRY7wPHeXItbIVBOS84eW9XpgrG0J7EnhNMJtH-eEQIUh1PSzCvzVnW1mBODlFqcabHjzcHATdU6xPkM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 via-primary/20 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl">
+<span class="inline-block bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-sm font-bold tracking-wider mb-6">CAMPUS VIBES</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-white leading-none tracking-tighter mb-6 text-shadow-sm">
+                    Life Beyond the <br/><span class="text-on-tertiary-container">Lecture Hall</span>
+</h1>
+<p class="text-xl md:text-2xl text-white/90 font-medium max-w-2xl leading-relaxed mb-10">
+                    Discover a community where tradition meets the future. At Quinnelle, your growth happens everywhere—from late-night debates in the dorms to championship wins on the field.
+                </p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-r from-primary-container to-secondary text-on-primary px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all flex items-center gap-2">
+                        Schedule a Tour <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Student Organizations - Asymmetric Bento Grid -->
+<section class="py-32 px-8 lg:px-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl font-black text-primary leading-tight mb-6">Find Your Community</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">With over 300 student-run organizations, Quinnelle offers a space for every passion. Whether you're building the next generation of robotics or debating global policy, you'll find your people here.</p>
+</div>
+<button class="text-primary font-bold border-b-2 border-primary pb-1 flex items-center gap-2 hover:gap-4 transition-all">Explore All Clubs <span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 h-[700px]">
+<!-- Large Feature Card -->
+<div class="md:col-span-7 bg-surface-container-low rounded-xl overflow-hidden relative group">
+<img alt="Student Debate" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of students passionately engaged in a formal debate competition within an ornate university hall with warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBrjqv1P_Z0XfxPUjD8BKpR_SS7DuXIDbInpJfdJvZiSfAOdYUuw5NYxPDOegug4MTCsuMTO9iyTj-Tq7XkyvqmWnh33GHhBOBV9Ki9CfnbOUd45_hfCBIqMbvlFFBk7BpREID9Sx-5raof9Wlx7TysucU4LzE6a8fg54ECSzh3luHQlv7RWYtpawQB4dCM-B1tN1dt1pJ2Gxv1WllIwioN__K5YG1FjPEf793_on4F4ERWYKyzL2H9GZYDrE93l3ED3n9lwUae4U"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 p-8 text-white">
+<h3 class="text-3xl font-bold mb-2">The Quinnelle Debate Society</h3>
+<p class="text-white/80">Challenging perspectives since 1924.</p>
+</div>
+</div>
+<!-- Side Stacks -->
+<div class="md:col-span-5 grid grid-rows-2 gap-8">
+<div class="bg-secondary-container text-on-secondary-container rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">precision_manufacturing</span>
+<h3 class="text-2xl font-bold mb-2">Robotics &amp; Innovation Lab</h3>
+<p class="opacity-90">Building the future of automation through collaborative engineering projects.</p>
+</div>
+<button class="mt-4 flex items-center font-bold gap-2">Join the Lab <span class="material-symbols-outlined">add</span></button>
+</div>
+<div class="bg-tertiary-container text-on-tertiary-container rounded-xl p-8 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-4">palette</span>
+<h3 class="text-2xl font-bold mb-2">The Arts Collective</h3>
+<p class="opacity-90">A multidisciplinary space for painters, musicians, and digital creators.</p>
+</div>
+<button class="mt-4 flex items-center font-bold gap-2">View Gallery <span class="material-symbols-outlined">east</span></button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Residential Life - Overlapping Editorial Layout -->
+<section class="py-32 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 lg:px-20 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="w-full aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img alt="Student Lounge" class="w-full h-full object-cover" data-alt="Modern university dormitory common room with stylish furniture, large windows, and students studying together in a warm cozy atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoU53eiWLgL7rxEi0G1NdjFwqxFE2LOxa6et20jHfLSREwbXiZmvs7lmKCXGo71A4dW3s6t2GKKCwaoENKXEcAZELAAJaB6wrOa6lMjK3GCXQ-UllkFteAxUj2ocwgHaYRGXN24qDXIaKzvBMLRhNOqHHAXOveVBN1bqUXAbxRiOFwjdU8PX8ndtmQ2n0JkxCnlB0jmHS3khxr4VNTwxyP0Gq64nGkMlhMGWNx9eKBbQKC29XbNtJ5WwV1kUJMoHz19PP3fnxC3PA"/>
+</div>
+<!-- The "Academic Feature" Tile - Overlapping element -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-surface-container-lowest p-6 rounded-xl shadow-xl z-20 hidden lg:flex flex-col justify-center text-center">
+<span class="text-5xl font-black text-secondary mb-2">95%</span>
+<p class="text-sm font-bold text-on-surface-variant uppercase tracking-widest">Freshman Retention</p>
+<p class="text-xs mt-2 text-stone-500 italic">Living on campus leads to success.</p>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="font-headline text-5xl font-black text-primary leading-tight">Your Home in the Heart of Campus</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Residence life at Quinnelle is more than just a place to sleep. It's an immersive experience where modern amenities meet historic charm. From our sustainably-built modern towers to our classic brick quad suites, each space is designed for connection.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary">wifi</span> High-speed fiber internet in all suites
+                        </li>
+<li class="flex items-center gap-4 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary">local_laundry_service</span> Smart laundry tracking &amp; notification
+                        </li>
+<li class="flex items-center gap-4 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-secondary">security</span> 24/7 dedicated campus safety support
+                        </li>
+</ul>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold hover:scale-105 transition-all">View Housing Options</button>
+</div>
+</div>
+</section>
+<!-- Athletics & Spirit - High Energy Section -->
+<section class="py-32 px-8 lg:px-20 bg-primary overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none">
+<img alt="Stadium" class="w-full h-full object-cover grayscale" data-alt="Dynamic shot of a packed university football stadium under bright lights at night, with cheering crowds and energy." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU1-qvic3zZSN0UGzDXse6lDcEqMjNfXmgINUFdpSgDQAdxpZCYxLsLP8nE2RY-6tzgzJ4OOUezy1GMaWAF_QIDAkLHS26iYcouxWNEjXwEElBheAdkekunonhB0OMZsYjuuc11Sm4bwurMTymILmzPTjqSlFWSECyPMmjZnfFbtUhu1MJP713IXCAwebfRzRfeZO9W_iYZKBRp_vczbcav_jZzlpMV-qy9rhtK5hiGwMlZ-YnqPZoM9UNXbY1MAet1XQweCJyq0A"/>
+</div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl mb-16">
+<h2 class="font-headline text-6xl font-black text-white leading-tight mb-6">Roar with the Lions</h2>
+<p class="text-white/80 text-xl leading-relaxed">Feel the rumble of the stands and the pride of Quinnelle. Our Division I programs represent the pinnacle of student-athlete excellence.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container">sports_football</span>
+<span class="text-sm font-bold text-white/50 tracking-widest uppercase">Gameday</span>
+</div>
+<h4 class="text-2xl font-bold text-white mb-4">Saturdays at The Den</h4>
+<p class="text-white/70 mb-6">Join 30,000 screaming fans for the most electric experience in college sports.</p>
+<a class="text-white font-bold inline-flex items-center gap-2" href="#">Ticket Info <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+<div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container">fitness_center</span>
+<span class="text-sm font-bold text-white/50 tracking-widest uppercase">Wellness</span>
+</div>
+<h4 class="text-2xl font-bold text-white mb-4">Student Rec Center</h4>
+<p class="text-white/70 mb-6">80,000 sq ft of state-of-the-art fitness equipment, pools, and rock climbing.</p>
+<a class="text-white font-bold inline-flex items-center gap-2" href="#">Gym Hours <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+<div class="bg-white/5 backdrop-blur-md border border-white/10 p-8 rounded-xl hover:bg-white/10 transition-colors">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container">groups</span>
+<span class="text-sm font-bold text-white/50 tracking-widest uppercase">Intramurals</span>
+</div>
+<h4 class="text-2xl font-bold text-white mb-4">Play Like a Pro</h4>
+<p class="text-white/70 mb-6">Compete in everything from flag football to e-sports with fellow students.</p>
+<a class="text-white font-bold inline-flex items-center gap-2" href="#">Join a Team <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Dining & Social Spaces - Tonal Surface Shifts -->
+<section class="py-32 px-8 lg:px-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-headline text-5xl font-black text-primary mb-6">Fuel Your Ambition</h2>
+<p class="text-on-surface-variant text-lg max-w-2xl mx-auto">From gourmet dining halls to hidden garden cafes, Quinnelle's social spaces are where friendships are forged over coffee and cuisine.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
+<div class="md:w-1/2 h-64 md:h-auto">
+<img alt="Cafe" class="w-full h-full object-cover" data-alt="Sunlit university cafe interior with modern wood accents, plants, and students drinking coffee and studying in a relaxed atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOB9EHmjvu8mA50kRiDvdgRvl83xs2yyjMBlyawrZhzWajhaHe7DQKXgvcyk8EOWJxdeNLmRv6vPbaLz2R6v-vexN66ZRDX1KKJSuXDOStMAMnlOPfohihiixM9_7MhwoHTIYtbfoYa0cj17fJTcudY16jHa2CsDrd9rbjgxIGHwR8Tp76jKb9VyEv1NEL9LpU1T94MNf2N-woMydmdRP4CxySi8qHwsW9CAAdpIJJf9TR1BQ5z2LM8WiunDi7uv1iXnhw3lbDH48"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<h3 class="text-2xl font-bold text-primary mb-4">The Quad Coffee House</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Locally roasted beans and artisanal pastries in a quiet, study-focused environment.</p>
+<span class="text-secondary font-bold flex items-center gap-2 text-sm">Open 24 Hours <span class="material-symbols-outlined text-sm">schedule</span></span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg flex flex-col md:flex-row">
+<div class="md:w-1/2 h-64 md:h-auto">
+<img alt="Dining Hall" class="w-full h-full object-cover" data-alt="Chef preparing fresh healthy food in a bright, modern university dining commons with a diverse selection of buffet options." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZg4AdcfCcxk5ADL8S4omjwOyzY6eRZqizoYdMOvV8sqPqxQin-nfIvXsSgkrWgTkL9cg2DVDk9oBV2LPfD4u95jBB3atvn0Pz5GANLttGl15aXL-OBm73GxNL9-GeFyPBKuaf8Fu7d-eaLj1XTHooZm_gAbrdaFQKLAV_crsNgR7Tmb8u7AxXHUYoKWbipusk5UQD_wq6cVxEVn_vMN0BfOsOnwN-yG_9SXETVjdmDRhrV5BCnmEzeRDxF1vIkczikGUfZeO4BQM"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col justify-center">
+<h3 class="text-2xl font-bold text-primary mb-4">Heritage Commons</h3>
+<p class="text-on-surface-variant mb-6 text-sm">A globe-spanning culinary experience featuring farm-to-table ingredients and seasonal menus.</p>
+<span class="text-secondary font-bold flex items-center gap-2 text-sm">Global Cuisines <span class="material-symbols-outlined text-sm">restaurant</span></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>

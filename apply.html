@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Apply / applicant portal
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+-->
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>Apply Now - Quinnelle University</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar: Standard Shell suppressed for focused journey, but specifically requested by user here -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8"><a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a>
+<a class="transition-transform hover:scale-105 text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-32 pb-20 relative overflow-hidden flex items-center justify-center">
+<!-- Background Elements -->
+<div class="absolute inset-0 -z-10 opacity-30 pointer-events-none">
+<div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-bl from-secondary-fixed to-transparent rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
+<div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-tertiary-fixed to-transparent rounded-full blur-[100px] translate-y-1/4 -translate-x-1/4"></div>
+</div>
+<div class="container mx-auto px-6 relative flex flex-col md:flex-row items-center gap-16">
+<!-- Hero Content / Context Section -->
+<div class="flex-1 max-w-xl hidden lg:block">
+<h1 class="text-5xl font-extrabold text-primary tracking-tighter mb-6 leading-[1.1]">
+                    Ignite Your Future at Quinnelle.
+                </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                    Your journey toward academic excellence and global leadership begins here. Sign in to your portal to continue your application or start a new chapter with us.
+                </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="p-6 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary mb-3">school</span>
+<h3 class="font-bold text-on-surface mb-1">Top-Tier Faculty</h3>
+<p class="text-sm text-on-surface-variant">Learn from world-renowned researchers and industry experts.</p>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary mb-3">language</span>
+<h3 class="font-bold text-on-surface mb-1">Global Reach</h3>
+<p class="text-sm text-on-surface-variant">Access study programs in over 45 countries worldwide.</p>
+</div>
+</div>
+</div>
+<!-- Login Card Container -->
+<div class="w-full max-w-[480px]">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-12 shadow-2xl shadow-on-background/5 border border-outline-variant/10">
+<div class="mb-10 text-center">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-container text-on-primary-container mb-6">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<h2 class="text-3xl font-bold tracking-tight text-on-background">Applicant Portal</h2>
+<p class="text-on-surface-variant mt-2 font-medium">Access your Quinnelle journey</p>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant ml-1" for="email">Email Address</label>
+<input class="w-full px-5 py-4 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface placeholder:text-on-surface-variant/50" id="email" placeholder="name@email.com" type="email"/>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-center ml-1">
+<label class="text-sm font-semibold text-on-surface-variant" for="password">Password</label>
+<a class="text-sm font-bold text-secondary hover:underline transition-all" href="#">Forgot Password?</a>
+</div>
+<input class="w-full px-5 py-4 rounded-xl bg-surface-container-high border-none focus:ring-2 focus:ring-secondary transition-all outline-none text-on-surface placeholder:text-on-surface-variant/50" id="password" placeholder="••••••••" type="password"/>
+</div>
+<div class="flex items-center gap-3 ml-1 py-2">
+<input class="w-5 h-5 rounded border-outline-variant text-secondary focus:ring-secondary" id="remember" type="checkbox"/>
+<label class="text-sm font-medium text-on-surface-variant" for="remember">Remember this device</label>
+</div>
+<button class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary font-bold text-lg shadow-lg shadow-primary-container/20 hover:scale-[1.02] active:scale-95 transition-all duration-200 flex items-center justify-center gap-2">
+                            Sign In
+                            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</form>
+<div class="mt-10 pt-8 border-t border-surface-container-high text-center">
+<p class="text-on-surface-variant font-medium">
+                            First time applying? 
+                            <a class="text-secondary font-bold hover:underline ml-1" href="#">Create an Account</a>
+</p>
+</div>
+</div>
+<!-- Assistance Note -->
+<div class="mt-8 text-center flex items-center justify-center gap-2 text-on-surface-variant/70">
+<span class="material-symbols-outlined text-lg">info</span>
+<span class="text-sm">Need help? Contact Admissions at (555) 012-3456</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>

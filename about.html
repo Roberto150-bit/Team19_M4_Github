@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — About
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+  Note: hero overlay uses .hero-gradient-about (see styles.css).
+-->
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>About Us | Quinnelle University</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8"><a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a></div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Stunning wide shot of Quinnelle University's historic neo-gothic clock tower and stone academic buildings at sunset with warm amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOUnHSgc5AD5wbE6zgxWVnGW-GUNDzU-gT1H_VyR_8KxUBD-G98ssqLCgc4gKExvVXYRudk8ZkSY1xpi6cJuHlLm68bzePAr1qTSLYQ-FNlLl5t_Z2U5Ha0KyvUpwa2cTpGBRPNUP67YX_T6UKMkfmywJcTrRGPh2y3y5o4qusgfL98E_IdfNFtM61ke1EpfcnV3ccRyJZTyToteqVe5ffdT7grgDjBSb8N2KgBMMBU2uSYxvNuOxe30ZtXkcp7kzWbQGPNrph6U8"/>
+<div class="absolute inset-0 hero-gradient-about"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-12 text-white">
+<div class="max-w-3xl space-y-6">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label text-sm font-bold uppercase tracking-widest">Est. 1892</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter leading-none">A Legacy of Innovation &amp; Excellence</h1>
+<p class="text-lg md:text-xl font-body max-w-2xl text-stone-200 leading-relaxed">For over a century, Quinnelle University has been a beacon of higher learning, bridging the gap between historical wisdom and future-forward discovery in the heart of our vibrant campus.</p>
+</div>
+</div>
+</section>
+<!-- Mission & Values Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div class="space-y-8">
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tight">Our Mission</h2>
+<p class="text-2xl font-body text-on-surface-variant leading-relaxed italic">
+                        "To cultivate an environment of relentless inquiry, where traditional heritage meets modern ingenuity, empowering the next generation of global leaders to solve the world's most complex challenges through rigorous academic excellence and compassionate service."
+                    </p>
+<div class="w-24 h-1 bg-secondary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Value Card 1 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary">Integrity</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Upholding the highest moral and ethical standards in all academic and social pursuits.</p>
+</div>
+<!-- Value Card 2 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="lightbulb">lightbulb</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary">Discovery</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Fostering a culture of curiosity and groundbreaking research across all disciplines.</p>
+</div>
+<!-- Value Card 3 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="group">group</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary">Inclusion</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Building a diverse community where every voice is heard, valued, and respected.</p>
+</div>
+<!-- Value Card 4 -->
+<div class="p-8 bg-surface-container-lowest rounded-xl space-y-4 hover:translate-y-[-4px] transition-transform duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="public">public</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary">Global Impact</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Extending our reach beyond borders to effect positive change on a global scale.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage Timeline -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto space-y-20">
+<div class="text-center space-y-4">
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tight">Our Heritage Timeline</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Tracing our journey from a small regional college to a premier global research institution.</p>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="absolute left-1/2 -translate-x-1/2 h-full w-px bg-outline-variant opacity-30 hidden md:block"></div>
+<div class="space-y-16">
+<!-- Milestone 1 -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-24 md:text-right">
+<span class="font-headline text-4xl font-black text-secondary">1892</span>
+<h3 class="text-2xl font-bold text-primary mb-2">The Founding</h3>
+<p class="text-on-surface-variant">Quinnelle College opens its doors with 42 students and a vision for classical education in the modern age.</p>
+</div>
+<div class="w-4 h-4 bg-secondary rounded-full z-10 hidden md:block"></div>
+<div class="md:w-1/2 md:pl-24">
+<div class="w-full h-48 bg-surface-container-highest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Vintage sepia photograph of the original university library building with Ivy-covered walls and students in 19th-century attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0FY9XOFfEIaSTJifpe91ubvmfYuNnYbeNntGJnkjp4uReRlPsKEQGZ9tx_nxYNm6c4arRO1WI5K8WXQaMLpDgPzat4fD9sIi99VGUjve5GI-znW1-5vyiV0qveawY222uiecmoiaqHG_CMnGEu9E71SoLkt2c4Su9hKkCkzJB_nX8qEvfeQHOYJAt3jqb9Z7WCTDj3DrlFtmIHm9dRtz0OghmJF32SMYuYb99xZ-JePH1FktNosVZ4AUt4YhVLPWNGVQBkREc3O8"/>
+</div>
+</div>
+</div>
+<!-- Milestone 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pl-24 md:text-left">
+<span class="font-headline text-4xl font-black text-secondary">1945</span>
+<h3 class="text-2xl font-bold text-primary mb-2">The Post-War Growth</h3>
+<p class="text-on-surface-variant">The campus undergoes its first major expansion, introducing the School of Sciences and state-of-the-art laboratories.</p>
+</div>
+<div class="w-4 h-4 bg-secondary rounded-full z-10 hidden md:block"></div>
+<div class="md:w-1/2 md:pr-24">
+<div class="w-full h-48 bg-surface-container-highest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Modernist mid-century academic building with large glass windows and clean architectural lines under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuI3-OcXCHTTIZ4Ppz1O57Bu4Qddo8-DMXNezwpayjVffpTvcQtCXDBVK6AFBzLIWYeW-oJ2reqIxGXd8y2hR-mgCHjENiJ471Qy_AR6eNuhjP5M1YqvD7cDNQiaI4vK3P65NKHTQY51mJrJPo1kth-xlCLeOvakaUpswIghIJAvPcJhHviFWnucrpSTdwPuMgEQwmXrg_2D4c6MoooS1ts8w-VS9trlb0rIgRiJHBZVdb7ZNSe1VGLiPgUJ1reK1g7neMe-e0TJI"/>
+</div>
+</div>
+</div>
+<!-- Milestone 3 -->
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-0">
+<div class="md:w-1/2 md:pr-24 md:text-right">
+<span class="font-headline text-4xl font-black text-secondary">2010</span>
+<h3 class="text-2xl font-bold text-primary mb-2">Global Research Lead</h3>
+<p class="text-on-surface-variant">Quinnelle attains Tier 1 status and establishes research partnerships across six continents.</p>
+</div>
+<div class="w-4 h-4 bg-secondary rounded-full z-10 hidden md:block"></div>
+<div class="md:w-1/2 md:pl-24">
+<div class="w-full h-48 bg-surface-container-highest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Interior of a high-tech modern research laboratory with researchers in white coats working with advanced equipment and blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFftlrM_euHFvy8kult56A559q616W7jIEvCvKuGSZtStv1G4Uc2tn8NPjGxfKOBEwNFsN8kr0aDbBYbsonyVPToNE8HPwS54Ci8jVsS6BX7ZLgHC1RLsdd3DhB1bSf-afC66_GVZ10uMQy2RtSp9oasuC1Sf29b48vm8kYc-Yjf1VQjrbbKoFb2M1jT8IynIOHBJ41JEw4nwZ4hswyVdA7cIGRmT6pNQ-I88wuAPnGB72LbEbOcZjSJQ4zt1aT5jn6ng4duZoDH8"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-20">
+<h2 class="font-headline text-5xl font-bold text-primary tracking-tight mb-4">Our Leadership</h2>
+<p class="text-on-surface-variant text-lg">Guided by a vision of academic excellence and strategic growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Leader 1 -->
+<div class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 bg-surface-container-high">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a middle-aged man in a dark suit, smiling warmly against a blurred academic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv1QJKZogre750zJ0c9lZpcQmNgTmOpGIPwYveOZ99vrAN4c88JEx--aEE0ldiTXiKx8kqK7PVc3hVVPEu5IavpTRoaxpqYa5gWPkFujBsfgpI7HMSFrN7Po57ZnBeQw74frSWpo1cQx94lVaJL9kASvFH8ItMKVMJIwsYDrdrvgl5OpSedy64cz4LPziTQTzeeHmwjkxrnr1RNotWoTbc0Vz5PX47NULwMRrrxyXWC82FN7UklTN3leKFjfTro0WHfEsTEkd4TIE"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Dr. Alistair Quinn</h3>
+<p class="text-secondary font-semibold">President</p>
+<p class="text-on-surface-variant mt-2 text-sm">30 years of leadership in higher education, focused on interdisciplinary innovation.</p>
+</div>
+<!-- Leader 2 -->
+<div class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 bg-surface-container-high">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a confident woman in business attire with glasses, standing in a brightly lit office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe-wUjrsmmbkdVzwuyWCm6sLMsvoLuM3SG77qCLSMkn4BUJ2KkKKA1H_h8UF99UdEFh_ngI8nCOCHuuq2DQTfY4sZ5mmy1RxBZSWyBYBTfwC7gLVD_v8qOut3jl2v1U8vAvPQ3hwYWh3Eo-svEFlOCFG9JlV9cWMskEigjWfxlvASAw3WBAu5NGbMXkU7tOL-pWN8TnX5metiP806fhSyguYm-xQhIlOU0ODVEXX5VNSHEXwItWFMYBMm3YLv8lFWFgCYJJKtvn_0"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Dr. Elena Rodriguez</h3>
+<p class="text-secondary font-semibold">Provost</p>
+<p class="text-on-surface-variant mt-2 text-sm">Overseeing academic affairs with a passion for student success and faculty development.</p>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="relative aspect-[4/5] overflow-hidden rounded-2xl mb-6 bg-surface-container-high">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional portrait of a man in a navy blazer and white shirt, looking directly at the camera with a calm expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrV5uro-3z9QqzjTBcR90uECial2VpE1VXfKaJCGatcU8JGV7YfDh4TdnrnjMTbhmPGlR8oY84kPSsGERfDy5pc-PvXGjj6yfqbjJ-rrg4K88X7XBlBYI6Da6PsEZKOIQZX4FBP6jRJhRcuCXzeJI74Z7DJ_Nb2pJTEXiNUW7XbNhc8yWdSNVD5tCKeamsXlosJzp2H79y1Iai6CQACeDjp1cCmOllS3XbGA0pMHicru4KKlp373Khub8iI0oMP5btFCcm2EW294I"/>
+</div>
+<h3 class="font-headline text-2xl font-bold text-primary">Marcus Thorne, JD</h3>
+<p class="text-secondary font-semibold">Board Chair</p>
+<p class="text-on-surface-variant mt-2 text-sm">A Quinnelle alumnus steering the university's strategic and financial future.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach / Impact Section -->
+<section class="py-32 px-12 bg-primary text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]" data-icon="public">public</span>
+</div>
+<div class="max-w-screen-2xl mx-auto relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<h2 class="font-headline text-5xl font-bold tracking-tight">Impact Without Borders</h2>
+<p class="text-stone-300 text-lg leading-relaxed">Quinnelle's influence stretches far beyond our campus gates. We are a nexus for global exchange, driving research that shapes international policy, health, and technology.</p>
+<div class="grid grid-cols-2 gap-12 pt-8">
+<div>
+<p class="text-5xl font-headline font-black text-on-tertiary-container">120+</p>
+<p class="text-sm uppercase tracking-widest text-stone-400 mt-2">Partner Institutions</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-black text-on-tertiary-container">85%</p>
+<p class="text-sm uppercase tracking-widest text-stone-400 mt-2">International Projects</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-black text-on-tertiary-container">14k</p>
+<p class="text-sm uppercase tracking-widest text-stone-400 mt-2">Global Alumni</p>
+</div>
+<div>
+<p class="text-5xl font-headline font-black text-on-tertiary-container">$200M</p>
+<p class="text-sm uppercase tracking-widest text-stone-400 mt-2">Annual Research Funding</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low/10 p-12 rounded-3xl backdrop-blur-md border border-white/5">
+<div class="aspect-square relative flex items-center justify-center">
+<!-- Visual Infographic Representation -->
+<div class="absolute w-full h-full rounded-full border-2 border-dashed border-white/20 animate-pulse"></div>
+<div class="absolute w-3/4 h-3/4 rounded-full border-2 border-dashed border-white/20"></div>
+<div class="absolute w-1/2 h-1/2 rounded-full border-2 border-dashed border-white/20"></div>
+<div class="text-center">
+<span class="material-symbols-outlined text-8xl text-on-tertiary-container mb-4" data-icon="language">language</span>
+<p class="font-headline text-2xl font-bold">World-Class Research</p>
+<p class="text-stone-400">Operating in 45 Countries</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-4xl mx-auto text-center space-y-10">
+<h2 class="font-headline text-6xl font-extrabold text-primary tracking-tighter">Become Part of the Quinnelle Story</h2>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto">Whether you're a prospective student, a researcher, or a lifelong learner, our gates are open to those who seek excellence.</p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+<button class="px-10 py-5 bg-primary-container text-on-primary rounded-xl font-headline font-bold text-lg hover:scale-105 active:scale-98 transition-all shadow-xl shadow-primary-container/20">Join Our Community</button>
+<button class="px-10 py-5 bg-surface-container-highest text-on-surface rounded-xl font-headline font-bold text-lg hover:scale-105 active:scale-98 transition-all">Plan a Visit</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>

@@ -1,0 +1,100 @@
+/**
+ * Quinnelle University — global styles (non-Tailwind utilities)
+ * --------------------------------------------------------------------------
+ * Tailwind utility classes come from the Play CDN + tailwind.config.js.
+ * This file holds: typography defaults, Material Symbols tuning, and small
+ * component helpers that were previously inlined in each HTML file.
+ */
+
+/* -------------------------------------------------------------------------- */
+/* Base typography                                                           */
+/* -------------------------------------------------------------------------- */
+
+body {
+  font-family: 'Manrope', system-ui, sans-serif;
+  background-color: #fdf8f7;
+  color: #1c1b1b;
+}
+
+h1,
+h2,
+h3,
+h4,
+.headline,
+.brand-font {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Material Symbols (Google Fonts)                                           */
+/* -------------------------------------------------------------------------- */
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Optional utility aliases (used on various templates)                        */
+/* -------------------------------------------------------------------------- */
+
+.font-plus-jakarta-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', system-ui, sans-serif;
+}
+
+/* Frosted navigation / panels */
+.glass-effect {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-nav {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* Home hero overlay */
+.hero-gradient {
+  background: linear-gradient(to right, rgba(84, 0, 12, 0.9), rgba(181, 26, 30, 0.4));
+}
+
+/* About page hero uses a different stop layout — separate class to avoid clashes */
+.hero-gradient-about {
+  background: linear-gradient(to right, rgba(84, 0, 12, 0.9), rgba(84, 0, 12, 0.4), transparent);
+}
+
+/* Primary CTA (home hero) */
+.btn-primary {
+  background: linear-gradient(to bottom right, #7a0b1a, #b51a1e);
+  transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+
+/* Programs catalog — image zoom on tile hover */
+.academic-feature-tile img {
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.academic-feature-tile:hover img {
+  transform: scale(1.05);
+}
+
+/* Campus Life hero headline legibility */
+.text-shadow-sm {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact page decorative heading */
+.text-gradient {
+  background: linear-gradient(to right, #7a0b1a, #b51a1e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

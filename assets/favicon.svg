@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Quinnelle University">
+  <title>Quinnelle University</title>
+  <desc>Transparent favicon; vector scales for browser tab sizes.</desc>
+  <defs>
+    <linearGradient id="q-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7a0b1a"/>
+      <stop offset="1" stop-color="#b51a1e"/>
+    </linearGradient>
+  </defs>
+  <circle cx="16" cy="15" r="11" fill="none" stroke="url(#q-fill)" stroke-width="3.25"/>
+  <path fill="none" stroke="url(#q-fill)" stroke-width="3" stroke-linecap="round" d="M21 20 L26 27"/>
+</svg>

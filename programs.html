@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Programs / majors catalog
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+-->
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>Majors &amp; Specializations | Quinnelle University</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a><a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-24">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter text-primary-container leading-tight">
+                        Explore Our Academic Offerings
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Find the right path for your future at Quinnelle. From heritage-rich humanities to the bleeding edge of digital innovation, our curricula are designed to spark curiosity and cultivate leadership.
+                    </p>
+<div class="relative max-w-md">
+<div class="flex items-center bg-surface-container-lowest p-2 rounded-xl shadow-xl shadow-black/5">
+<span class="material-symbols-outlined px-3 text-outline">search</span>
+<input class="w-full border-none focus:ring-0 bg-transparent py-3 font-medium" placeholder="Search programs (e.g. Digital Innovation)" type="text"/>
+<button class="bg-primary-container text-on-primary px-6 py-3 rounded-lg font-bold">Search</button>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-3xl overflow-hidden aspect-[4/3] shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="Modern university library with tall wooden shelves and students studying at large circular tables in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsxaFRH7njkwXFf9Ta6rB2_1-C9_ohTe4IUsTEuwkfQlhRSwGMODepwGmL__fnTQ7eOG4gjF2v1T5YdN-KX7OzzWAArun9b30LFvMImzIA3do_uy2e2yXLTqxx645R9EtyQNxrJoDA898XAsuOEMkn9XgfPGlVTdvuitAgMB4Rv3ummEZsztQ4T1HKTwKSCIE-xtM4RLDDUhqDCnoFaVOQjn2eFDn5UzS0B21VhNTKuAFxhaVs_naCJY_9YlhRxDk4Czt-VSao7kg"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-tertiary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -top-8 -right-8 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-16">
+<div class="flex flex-wrap gap-4 items-center justify-center md:justify-start">
+<button class="px-8 py-3 rounded-full bg-primary-container text-on-primary font-bold shadow-md">All Programs</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors font-medium">Technology</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors font-medium">Arts &amp; Humanities</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors font-medium">Sciences</button>
+<button class="px-8 py-3 rounded-full bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container-high transition-colors font-medium">Business</button>
+</div>
+</section>
+<!-- Majors Grid -->
+<section class="px-12 max-w-screen-2xl mx-auto mb-32">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="High tech computer lab with glowing blue screens and server racks in the background representing digital innovation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbk7AgFQ_JfbFEB-Qwt931jA9hX-aQtI8VOOmmU1Jhv1jeMX79WBu0gJTiPSQ3bajqe-9qcPFsC0DtWe_y_CJfuyjfYFxSntEqEvp3q5Xp8P9XvhOVzZ4Qc00XbNiklYwi4DdMVCwapbCB0Q3Drgej2wKoBEe1Wx-HTuLz5ylbU45saBDijhRtHc5EfnA_arGR1bhaqZrBDm0ijC_dySsiz6FaHhJx0t9A5oLljpKehzM5HdEB1IfE4sanwrPvTxYY8D9Q05SjVTY"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Technology</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">B.Sc. in Digital Innovation</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            Master the architecture of tomorrow's digital ecosystem, from AI integration to decentralized finance systems.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Full Time</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Artist studio with paint splattered floor, large canvas on easel, and bright natural light coming from high windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaY7ZkQBhRoynTPVq5JuSRdCWjD5zRQMgYSSskD3t044BCsXf_miH5GEI5WuP3Ifvc15eYwTzi8j3rbam3C4J0JAA5F_gfan2nJl_XX-QGWilAX1k8P7MwgNlqDBloWtuqD1SKOiP4ooDeqaKKzZYRNh0h_vz_IP2mrmW9ilXobCA9_yUFM6iatg96_MO599PF-_2wtvgx9-3xUpv_UOyL6OS2C-HGxmrt2djyh7HMrX0eRIX2OTw7gsipC7qMwu4aLGXccbgOsVM"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Arts &amp; Humanities</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">B.A. in Visual Arts</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            A classic curriculum blended with contemporary theory to help you find your unique creative voice.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Full Time</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Science laboratory with microscopes, glass test tubes, and a researcher in white coat working in a sterilized environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkycCIirBnPc32fd_I5YNk4FinmrbnoUdClQPu4A41a6UOYh9tvIdSCNJHTbz1mbAPM5J7tWhRnG-UFLh7qYEwvBmEy4d7wOg24QJ3jbubWBIO3iAJ1KuV35to6Jw4qJ2Ke0vfFavKcO1pHL5kQMqrW-lnZwk0iS-_1dikqfLBUMsT3T8CpA5vQB2oy8hofjQy0o54PZt8l-j_hs7QXuKfCdlxlwWvTj3ZsRLB1dAK0KFqcqXNG2cAXXRBxCm57HQaZDe-tWvXMyI"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Sciences</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">M.Sc. in Molecular Biology</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            Engage in cutting-edge research at the intersection of genetics, health, and sustainable biotechnology.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">2 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Research</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Modern business center boardroom with large glass windows overlooking a city skyline at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGisFDGv9us28iSQ-JW0lNI81TL3NxkVhT_gWyk0OcNFbSrZ8XfSjCuRexC64aMbWFYK93gB6YgF9kwpEWzRSc-oPY6BLtOeSrgGfa3YyYHYCU4axkzVihK1cFTH2IUT6gqJzXRbe59HIJBKnYgswU9BcZjRn20qaG-vjkNZcKYcxdrPk4g7rV69iJG5w1cSYJK-u0qEZQ2OkQoAZDOrFWsYzsPnqo_7rD4UbszjXO66iz89tRQ2RUB0mwlkQ-vFEiNXLRm9SIIec"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Business</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">MBA in Global Strategy</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            Develop the leadership and strategic acumen required to navigate complex global markets.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">1.5 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Executive</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Students discussing over a large map and historical documents in a heritage building classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMDfBjJDwYf1It5aFwEUe3u0fBQ5yn81s8vRvgRGW4z96QGGOnFRLZcf30VVpoMLEkWGpE0Fq6L01z5SIh4qxtMlYheKi61980s-_Kl6fBcJMR5kC6bWiFbAyUCEkcuG2W83qtXX8Onozg3rQd3O2OaBzqUJm_2ATxblSZbRfm-kVZdbIFqYQTgFwoRHWz1WwPS2Mum6a9CYQXD9rqju54FmbAzq-07uo4x9bh4Auu2oGNyEzMS39dgIcdg6VJbBSJvEatBmJvDM0"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Arts &amp; Humanities</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">B.A. in Global History</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            Examine the narratives that shaped our world and learn to think critically about our shared future.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Full Time</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group bg-surface-container-lowest rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 flex flex-col h-full border-none">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A glowing abstract representation of data streams and neural networks representing information science and cybernetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZBZODI8TesJ4hh6LSdFpB4hmyHQpBzjfogV4EWwukrQMkglF5O3ESdCN1uJpwGempTPn4BFhq5urLyEIlJbRlkAJ4INTKpT3zCi4yloDgkzDyZSlNZOZkIL1R2HnsxwwT4IlOENfRWMxLoaFyvU_4t2FU2FBkLVhM72UbpPxZ_By5vOmFOUU8dtM4fbkAb0DRE749ssbT8YsLEMP4pbp6fNBdiyMAhw95eD7E4wobYQ60CzrmoEvCqw_Cj-hN8BQ28-SVSLqDrrs"/>
+</div>
+<div class="p-8 flex-grow flex flex-col">
+<span class="text-xs font-bold tracking-widest uppercase text-secondary mb-3">Technology</span>
+<h3 class="text-2xl font-bold text-primary-container mb-4">B.Sc. in Data Ethics</h3>
+<p class="text-on-surface-variant mb-6 flex-grow leading-relaxed">
+                            Interdisciplinary program focusing on the moral and societal implications of data-driven technology.
+                        </p>
+<div class="flex items-center gap-6 mb-8 py-4 border-y border-surface-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span>
+<span class="text-sm font-bold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-secondary">work</span>
+<span class="text-sm font-bold">Full Time</span>
+</div>
+</div>
+<button class="w-full text-center py-4 bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-secondary hover:text-on-secondary transition-all">
+                            View Details
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Values -->
+<section class="bg-surface-container-low py-32 overflow-hidden">
+<div class="px-12 max-w-screen-2xl mx-auto">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 space-y-8">
+<h2 class="text-5xl font-extrabold tracking-tighter text-primary-container leading-tight">
+                            Academic Excellence <br/> Through Heritage
+                        </h2>
+<div class="space-y-6">
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 bg-primary-container text-on-primary flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary-container mb-2">Rooted in Tradition</h4>
+<p class="text-on-surface-variant leading-relaxed">Two centuries of academic rigor providing a solid foundation for every scholar.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 bg-secondary text-on-primary flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary-container mb-2">Designed for the Future</h4>
+<p class="text-on-surface-variant leading-relaxed">Curricula constantly evolved by industry leaders and world-class researchers.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 shrink-0 bg-tertiary-container text-on-tertiary flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h4 class="text-xl font-bold text-primary-container mb-2">Global Network</h4>
+<p class="text-on-surface-variant leading-relaxed">Join a community of 200,000+ alumni leading transformation across the globe.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative academic-feature-tile">
+<div class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl translate-x-12 lg:translate-x-20">
+<img class="w-full h-[500px] object-cover" data-alt="Majestic stone architecture of a traditional university building with ivy climbing the walls under a clear blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_ox7QSxJTcuG4xgIGymrvNoh3tQPIDHqwvEsNJXjuLa_1TPUxBl1QmEWjAVZjB1ZvXSAPqaCpg16m8DXrO_oxHdRJckwLaeMplISnxmEBeyIEA56FwSzs2Q0h41XwH0oCgB4fTk6xvS5jrDJnkUqqA3a0YdWTP9rcmhDimrl4REDPR8n1Qze3HfO8f6YVu5DIGHk2N5G8XXVpJIIWEhppWA2Fp5UEbDGOvQgd92us8NcXNQoEuODeksxwKoBz7y5ih6bks47m7Kw"/>
+</div>
+<div class="absolute inset-0 border-2 border-secondary/20 rounded-[2.5rem] -translate-x-4 translate-y-4"></div>
+<div class="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-surface text-secondary flex items-center justify-center rounded-full shadow-2xl z-20">
+<div class="text-center">
+<span class="block text-4xl font-extrabold leading-none">200+</span>
+<span class="text-[10px] uppercase tracking-widest font-bold">Years of Merit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>

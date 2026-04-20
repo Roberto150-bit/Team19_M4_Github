@@ -1,248 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campus Connect — Student Hub</title>
-  <meta name="description" content="A simple campus hub for resources, events, and student life. Demo MVP.">
-  <link rel="stylesheet" href="style.css">
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Home (index)
+  Assets: tailwind.config.js (theme), styles.css (custom CSS), app.js (behaviour), assets/favicon.svg (tab icon).
+  Utilities: Tailwind Play CDN (see <head>).
+-->
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>Quinnelle University | The Academic Luminary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="styles.css"/>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a>
+</div>
+<div class="flex items-center space-x-4">
+<a href="contact.html" class="px-5 py-2 text-stone-600 font-medium hover:text-red-700">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[921px] flex items-center overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Modern red-toned university campus architecture with a lion emblem building overlooking a serene reflection pool and walking paths" src="https://lh3.googleusercontent.com/aida/ADBb0uinacAbOpk4CsN_p_W4DMQCu6N7XR9X6sZQ5K4YAwnOM_sVH2pxCgcTknd_W2zdjf2a5Eazkg4_C2HMT1417WTOsWsWGL7F8zQ1TxS-x1KIGIAoWfNH5iVCD4fL0EBWY9Id0NPxpOfdv-U5FEyeOuWZ_xkAdJmfXTaj7LFXm5w4lS6l83Rw2-9osWap5nxcScT_9WQoYW3bMu5xFCGZLwe1av1W-D2lOLizxr2cg9tnE-Sqfdh6KWmN67DMGGqp9TgnLe9ZalMQ"/>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="text-6xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter mb-6">
+                    Your Future Begins at <span class="text-on-tertiary-container">Quinnelle</span>
+</h1>
+<p class="text-xl md:text-2xl text-white/90 font-medium mb-10 leading-relaxed">
+                    Discover a community dedicated to your success. Experience high-end academic excellence integrated with modern tradition.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a href="programs.html" class="btn-primary inline-flex px-8 py-4 rounded-xl text-white font-bold text-lg">Explore Programs</a>
+<a href="contact.html" class="inline-flex px-8 py-4 rounded-xl bg-white/10 glass-effect border border-white/20 text-white font-bold text-lg hover:bg-white/20 transition-all">Schedule a Tour</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Section 1: About -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-tertiary-fixed opacity-30 rounded-full blur-3xl"></div>
+<img class="rounded-xl shadow-2xl relative z-10" data-alt="Modern university crest logo subtly integrated onto a glass wall in a sunlit academic hallway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuAU9ThLI3EBlzn6TQpmh_EpYkndpD4wSHjL67wESdhM2ZA0-Y4j3eoT0isPFEpiQsCQFgFyZa4DGumaJ7EXsO-fp9bpOkA5RoLu430AExy7iyfZr20yYw5-dlGlOcHvVA_gdeXuod_6a0cFNVnG9vrQoaxiT_UZ2wCD-kgqb3osyrbSc_W6fARIIISODjngrGrrh28A3My-6lqh4RrkZhfds0FU4AGEtiSuBeh3dNBG7fFlt3oAzSlFRGg10OzT_5CwAW4YtYZeA"/>
+</div>
+<div>
+<span class="inline-block px-4 py-1 bg-secondary-fixed text-on-secondary-fixed text-xs font-extrabold tracking-widest uppercase mb-6 rounded-full">Our Legacy</span>
+<h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 leading-tight">Cultivating the Luminaries of Tomorrow</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                    Founded on the principles of rigor and innovation, Quinnelle University stands as a beacon of academic excellence. We believe that true education transcends the classroom, fostering a holistic environment where curiosity meets purpose.
+                </p>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                    Our mission is to empower a diverse student body through transformative experiences, world-class faculty, and a commitment to global leadership.
+                </p>
+<button class="text-secondary font-bold flex items-center gap-2 group">
+                    Learn more about our mission 
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Section 2: Campus Resources -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-bold text-primary mb-4">Empowering Your Journey</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Access world-class resources designed to support your academic growth and personal well-being.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-secondary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">auto_stories</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Study Spaces</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">24/7 access to quiet zones and collaborative pods across three libraries.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-tertiary transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-tertiary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl">psychology</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Advising</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Dedicated academic counselors to help you navigate your degree path.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-secondary transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-secondary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-secondary text-3xl">print</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Tech &amp; Printing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">High-speed labs and campus-wide wireless printing for all students.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-tertiary transition-all hover:-translate-y-2">
+<div class="w-14 h-14 bg-tertiary-fixed flex items-center justify-center rounded-xl mb-6">
+<span class="material-symbols-outlined text-tertiary text-3xl">favorite</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-3">Wellness</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Comprehensive mental health support and fitness facilities.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Student Life (Bento Grid) -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold text-primary mb-12">Life on Campus</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 h-[800px] md:h-[600px]">
+<div class="md:col-span-2 md:row-span-2 relative rounded-2xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="vibrant student club fair outdoors with colorful banners and diverse groups of students interacting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcuY_COBpLo8m1m51M1f1OiPyAieCa3hWZo_hYVqRKXVqTTVOtvGHo3fp7ENy7LC8Pwn9rvhybaxc-m_x4PU8s23cINKiqpnKa55T7IjAlU9naHRxKxKnADQ0Cqv4fw6JHM-j7qB3TgcIEnbD3u6kXFfon82gv9X6XbpHsvdh9HTou_vIgveg_u2wpclPf-bBa-q0ZYdSnIup30FMpCNxyrZF5_Uvyz7jJ_FedEa9ekTo3lHIM61yaS5-TlBZlYC6FiKKaB2086uA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-2xl font-bold text-white mb-2">Club Fairs</h3>
+<p class="text-white/80">Connect with over 200 student organizations.</p>
+</div>
+</div>
+<div class="md:col-span-2 relative rounded-2xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="students cheering at an indoor intramural sports event with energetic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ6PDMUzzAwarPRSca88GFQFaD9ojVYo_wMrlFIduvSk_YejbA7gy9cD9tRD1WNYLWBgUG8dSHHqymnC27jNRxaxy_VLdITNg3a0zPNWSlJY3zpvZwYgNfzx_iKEG4ZFpbqZb3AnDVwx-zlSj9JY1P0i272lN6flxyseQQDmP7-14nTHEUR-V4Uts4T6CljJitsyI92Kodj1kH-l6iGL0UFayM3rFpzP5qYRLF7tEXHtS-WCryKc3AV0fVzWWysyhPuo_qRR0mgEY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-1">Intramural Sports</h3>
+<p class="text-white/80 text-sm">Competitive and recreational leagues for everyone.</p>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern student lounge with comfortable seating and warm ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUEXyLlmyM5RPLmev0hTyaqig4dt0fYBUimS69iJ6snTUUgNuIy_QmFxGrbdyC4aY0B9mHfC3F9goR01p2pKgl4xiIyyBFHMcu6efMAPzIZLM1QX-IGyPL8IAYDQNrn2raou75KUqduA4qFJ32RlnWbuO20SCcmILQHZMheUNIKKTSGorO9dzVd0Z6JLl7Z0c5VJZ0vISzSwFNlIJC8ZSjUYnzpQLnLasGYiIiD_HrpTp1TAaWLCK16tSPiUXDLH1Vlxc8CLRkJQ4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-1">Lounges</h3>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="cinematic film screening event on a campus lawn at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd_XLyAJvMtE5QhBCoaiz4xoqtTU2RsWp8TGLB8DdJ79hz58nLFz8vVf1o8EQZpri5yySKeHTSKKcX4-RAfiX5_5z8Kfa1YxOwdxxEenTQeP1J5nuDUFvkbf7CZ79DHokIA9BrC3qwDf68cOja9NFw-NDdqYV9cvybDq-jR3_32zhF9aoiBxjfocyFXmNosfvGx55xDWq-utp3Fez3D4aRO5Ns__4JS4jBUkuIO855nF1XptoOjoef41ocOsiAl-9G1vzdV8ake_I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-xl font-bold text-white mb-1">Film Loops</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Prospective Students -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-bold text-primary mb-4">Start Your Story</h2>
+<p class="text-on-surface-variant max-w-xl">Everything you need to prepare for your first year at Quinnelle.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="h-1 w-20 bg-secondary"></div>
+<h3 class="text-2xl font-bold text-primary">Cost Snapshot</h3>
+<p class="text-on-surface-variant">We provide transparent tuition and fee breakdowns along with extensive scholarship opportunities.</p>
+<a class="inline-flex items-center text-secondary font-bold gap-2" href="#">View Tuition <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="space-y-6">
+<div class="h-1 w-20 bg-tertiary"></div>
+<h3 class="text-2xl font-bold text-primary">First Week Checklist</h3>
+<p class="text-on-surface-variant">From ID cards to move-in day, our step-by-step guide ensures you hit the ground running.</p>
+<a class="inline-flex items-center text-secondary font-bold gap-2" href="#">Download Guide <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="space-y-6">
+<div class="h-1 w-20 bg-secondary"></div>
+<h3 class="text-2xl font-bold text-primary">Campus Tour Routes</h3>
+<p class="text-on-surface-variant">Self-guided or led by students, discover the iconic landmarks of our historic campus.</p>
+<a class="inline-flex items-center text-secondary font-bold gap-2" href="#">See Maps <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Events -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="text-4xl font-bold text-primary mb-12">Upcoming Events</h2>
+<div class="space-y-6">
+<div class="group flex flex-col md:flex-row items-center bg-surface-container-lowest rounded-2xl p-8 shadow-sm hover:shadow-md transition-all gap-8">
+<div class="text-center md:text-left min-w-[120px]">
+<p class="text-secondary font-extrabold text-3xl">AUG 24</p>
+<p class="text-on-surface-variant font-medium">9:00 AM</p>
+</div>
+<div class="flex-grow">
+<h3 class="text-2xl font-bold text-primary mb-2">Welcome Back Picnic</h3>
+<p class="text-on-surface-variant">Join us on the Main Quad for food, music, and community as we kick off the new academic year.</p>
+</div>
+<button class="px-6 py-3 border-2 border-outline-variant text-primary font-bold rounded-xl group-hover:bg-primary group-hover:text-white transition-all">RSVP Now</button>
+</div>
+<div class="group flex flex-col md:flex-row items-center bg-surface-container-lowest rounded-2xl p-8 shadow-sm hover:shadow-md transition-all gap-8">
+<div class="text-center md:text-left min-w-[120px]">
+<p class="text-secondary font-extrabold text-3xl">SEP 05</p>
+<p class="text-on-surface-variant font-medium">6:00 PM</p>
+</div>
+<div class="flex-grow">
+<h3 class="text-2xl font-bold text-primary mb-2">Night Market</h3>
+<p class="text-on-surface-variant">Experience local artisans, street food, and performances under the campus lights.</p>
+</div>
+<button class="px-6 py-3 border-2 border-outline-variant text-primary font-bold rounded-xl group-hover:bg-primary group-hover:text-white transition-all">RSVP Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Contact -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest rounded-3xl p-12 shadow-xl">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold text-primary mb-4">Connect With Us</h2>
+<p class="text-on-surface-variant">Have questions about admissions or campus life? We're here to help.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-secondary py-3 px-4" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-secondary py-3 px-4" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-primary mb-2">Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl focus:ring-2 focus:ring-secondary py-3 px-4" rows="4"></textarea>
+</div>
+<button class="w-full btn-primary py-4 rounded-xl text-white font-bold text-lg" type="submit">Send Inquiry</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
 
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="Campus Connect home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-text">Campus Connect</span>
-      </a>
-
-      <button
-        class="nav-toggle"
-        type="button"
-        id="navToggle"
-        aria-expanded="false"
-        aria-controls="siteNav"
-        aria-label="Open menu"
-      >
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-      </button>
-
-      <nav class="site-nav" id="siteNav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="#about">About</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#student-life">Student life</a></li>
-          <li><a href="#prospective">Prospective</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact" class="nav-cta">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-inner">
-        <div class="hero-copy reveal" data-reveal>
-          <p class="eyebrow">Your campus, one place</p>
-          <h1 id="hero-title">Find what you need, fast</h1>
-          <p class="hero-lead">
-            A lightweight hub for schedules, spaces, and student support. Built as a demo—swap in your real links and copy anytime.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#resources">Browse resources</a>
-            <a class="btn btn-secondary" href="#events">See events</a>
-          </div>
-        </div>
-        <div class="hero-visual reveal" data-reveal>
-          <div class="hero-placeholder" role="img" aria-label="Placeholder for hero banner image">
-            <span class="hero-placeholder-label">Hero image / banner</span>
-            <span class="hero-placeholder-hint">Drop a photo or graphic here later</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-about" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="about-title">What this is</h2>
-          <p class="section-intro">
-            Campus Connect is a front-end MVP: a single page you can hand off to designers or content owners. Everything here is placeholder text—keep the structure, replace the words.
-          </p>
-        </header>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="resources" aria-labelledby="resources-title">
-      <div class="container">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="resources-title">Campus resources</h2>
-          <p class="section-sub">Short summaries you can expand into full pages later.</p>
-        </header>
-        <ul class="card-grid">
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Study spaces</h3>
-            <p class="card-text">Quiet floors, group rooms, and late-night labs. Reserve a slot or walk in when spots open.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Advising drop-ins</h3>
-            <p class="card-text">Quick questions about majors, credits, or next-term planning. No appointment needed on demo Tuesdays.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Tech &amp; printing</h3>
-            <p class="card-text">Loaner chargers, poster printing, and basic troubleshooting. Bring your student ID at the help desk.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Wellness check-ins</h3>
-            <p class="card-text">Short peer-led sessions for stress, sleep, and focus. Optional; nothing is recorded in this demo.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="student-life" aria-labelledby="student-life-title">
-      <div class="container">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="student-life-title">Student life</h2>
-          <p class="section-sub">Tiles for clubs, hangouts, and low-key traditions.</p>
-        </header>
-        <ul class="tile-grid">
-          <li class="tile reveal" data-reveal>
-            <h3 class="tile-title">Club fair pop-up</h3>
-            <p class="tile-text">Meet five clubs in fifteen minutes. Sticker sheet for anyone who tries.</p>
-          </li>
-          <li class="tile reveal" data-reveal>
-            <h3 class="tile-title">Friday film loop</h3>
-            <p class="tile-text">Student picks, silly intermissions, and cheap snacks. Bring a blanket if the AC runs cold.</p>
-          </li>
-          <li class="tile reveal" data-reveal>
-            <h3 class="tile-title">Intramural chill league</h3>
-            <p class="tile-text">Low-stakes volleyball and ping-pong. Teams form week one; subs welcome all term.</p>
-          </li>
-          <li class="tile reveal" data-reveal>
-            <h3 class="tile-title">Commuter lounge hours</h3>
-            <p class="tile-text">Microwave row, lockers, and a whiteboard for ride shares. Updated weekly on the door.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="prospective" aria-labelledby="prospective-title">
-      <div class="container">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="prospective-title">Prospective students</h2>
-          <p class="section-sub">Starter cards for visits, costs, and first-week tips.</p>
-        </header>
-        <ul class="card-grid">
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Campus tour routes</h3>
-            <p class="card-text">Two loop options: quick twenty minutes or the full hour with library and dining stops.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Cost snapshot</h3>
-            <p class="card-text">Sample numbers only. Use this card to link a real estimator or aid page when ready.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">First week checklist</h3>
-            <p class="card-text">ID photo, Wi-Fi, bus pass, and one fun elective. Keep it scannable on mobile.</p>
-          </li>
-          <li class="card reveal" data-reveal>
-            <h3 class="card-title">Ask a current student</h3>
-            <p class="card-text">Placeholder Q&amp;A block. Replace with a form, calendar, or Discord link in a future version.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section" id="events" aria-labelledby="events-title">
-      <div class="container">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="events-title">Featured events</h2>
-          <p class="section-sub">Dates are placeholders—edit in one place when you wire real data.</p>
-        </header>
-        <ul class="event-grid">
-          <li class="event-card reveal" data-reveal>
-            <p class="event-date">Thu, Oct 9, 2026 · 4:00 PM</p>
-            <h3 class="event-title">Welcome back picnic</h3>
-            <p class="event-text">Music on the quad, vegetarian options, and a raffle for bookstore credit (demo prizes).</p>
-          </li>
-          <li class="event-card reveal" data-reveal>
-            <p class="event-date">Wed, Oct 22, 2026 · 7:30 PM</p>
-            <h3 class="event-title">Night market mini</h3>
-            <p class="event-text">Local makers, club booths, and hot drinks. Rain plan moves to the student center atrium.</p>
-          </li>
-          <li class="event-card reveal" data-reveal>
-            <p class="event-date">Sat, Nov 1, 2026 · 10:00 AM</p>
-            <h3 class="event-title">Open studio walk-through</h3>
-            <p class="event-text">See senior projects in progress. Good for photos—ask before you post, as always.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
-      <div class="container container-narrow">
-        <header class="section-header reveal" data-reveal>
-          <h2 id="contact-title">Contact</h2>
-          <p class="section-sub">Demo form only—nothing is sent. Fill it out to see validation and a friendly success state.</p>
-        </header>
-
-        <div class="form-card reveal" data-reveal>
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="form-row">
-              <label for="contactName">Name</label>
-              <input type="text" id="contactName" name="name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Alex Rivera">
-              <p class="field-error" id="nameError" role="alert" aria-live="polite"></p>
-            </div>
-            <div class="form-row">
-              <label for="contactEmail">Email</label>
-              <input type="email" id="contactEmail" name="email" autocomplete="email" required maxlength="120" placeholder="you@example.edu">
-              <p class="field-error" id="emailError" role="alert" aria-live="polite"></p>
-            </div>
-            <div class="form-row">
-              <label for="contactMessage">Message</label>
-              <textarea id="contactMessage" name="message" required minlength="10" maxlength="800" rows="5" placeholder="Ask about tours, resources, or how to swap this copy."></textarea>
-              <p class="field-error" id="messageError" role="alert" aria-live="polite"></p>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send message</button>
-          </form>
-
-          <div class="form-success" id="formSuccess" hidden role="status" aria-live="polite">
-            <p class="form-success-title">Thanks—that looked good.</p>
-            <p class="form-success-text">In a real build, this would email your team or open a ticket. For this MVP, your message stays in the browser only.</p>
-            <button type="button" class="btn btn-secondary" id="resetFormBtn">Send another</button>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark brand-mark--sm" aria-hidden="true"></span>
-        <span class="footer-name">Campus Connect</span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#student-life">Student life</a></li>
-          <li><a href="#prospective">Prospective</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <p class="footer-disclaimer">
-        Demo / student project: placeholder content and front-end only. No data is stored or transmitted.
-      </p>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-</body>
-</html>
+<script src="app.js" defer></script>
+</body></html>

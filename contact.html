@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--
+  Quinnelle University — Contact admissions
+  Shared: tailwind.config.js, styles.css, app.js, assets/favicon.svg
+-->
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any"/>
+<link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+
+<title>Contact Admissions | Quinnelle University</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white shadow-sm flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-xl font-bold tracking-tight text-red-900 dark:text-red-500">Quinnelle University</div>
+<div class="hidden md:flex items-center space-x-8"><a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="programs.html">Programs</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="about.html">About</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="campus-life.html">Campus Life</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-red-700 dark:hover:text-red-300 transition-transform hover:scale-105" href="admissions.html">Admissions</a>
+</div>
+<div class="flex items-center space-x-4">
+<a class="text-red-900 dark:text-red-400 font-bold border-b-2 border-red-800 transition-transform hover:scale-105 px-2" href="contact.html">Contact</a>
+<a href="apply.html" class="px-6 py-2 bg-primary-container text-white rounded-full font-bold hover:scale-105 transition-all">Apply Now</a>
+</div>
+</nav>
+<main class="pt-[72px]">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Admissions Counselor Interaction" class="w-full h-full object-cover" data-alt="a warm and supportive admissions counselor smiling and talking with a prospective student in a bright, modern university lounge with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgBsVDvewenzzFgmtP67fUYSxCveFw8NaWtHIjtlxqKchHllzIdW3kDKN2Atsbx1_WSp--hg_D2YYtWz1qtbusSiQI7Dq7t1NCfTXKCbr6ZQ1yJ40U3g17iDVZqU7Id0HkAmYoRJ2kHXjhhlSlD4WIC5IJk0MGxkfAoZcCDKZtmEqhdcsTVfMPRphlQpJnTwPOx63iVyrQMb9XL8zGaSdAGS8TpsdCuKJnyzbaXsFa8joo7RrxIBmbwR-C-_5bg-rMqaA0K6ZVNco"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 rounded-full bg-secondary-fixed text-primary font-bold text-xs tracking-widest mb-6 font-headline">CONTACT US</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-primary tracking-tighter leading-none mb-8">
+                        We're Here for Your Journey
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+                        Navigating your future should be an exciting adventure, not a complex puzzle. No question is too small—we're here to light the way.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-gradient-to-r from-primary-container to-secondary text-on-primary px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform shadow-xl shadow-primary/20" href="#message">
+                            Get in Touch
+                        </a>
+<a class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:scale-[1.02] transition-transform" href="#directory">
+                            Meet Your Guide
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Contact Links -->
+<section class="max-w-screen-2xl mx-auto px-8 -mt-20 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg shadow-stone-200/50 flex items-start gap-5 hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-primary">Call Us</h3>
+<p class="text-on-surface-variant text-sm mt-1">Direct line to Admissions</p>
+<p class="font-bold text-on-surface mt-2">+1 (800) QUIN-ADM</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg shadow-stone-200/50 flex items-start gap-5 hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-tertiary">Email Us</h3>
+<p class="text-on-surface-variant text-sm mt-1">Get a response within 24h</p>
+<p class="font-bold text-on-surface mt-2">hello@quinnelle.edu</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-lg shadow-stone-200/50 flex items-start gap-5 hover:scale-[1.02] transition-transform">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">video_chat</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-lg text-secondary">Virtual Office Hours</h3>
+<p class="text-on-surface-variant text-sm mt-1">Drop-in via Zoom</p>
+<p class="font-bold text-on-surface mt-2">Mon-Fri: 10am - 4pm</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Counselor Directory -->
+<section class="pt-32 pb-20 max-w-screen-2xl mx-auto px-8" id="directory">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline text-5xl font-extrabold text-primary tracking-tighter mb-4">Meet Your Guide</h2>
+<p class="text-lg text-on-surface-variant">Our admissions specialists are more than advisors—they're your first connection to the Quinnelle community.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                    View all counselors <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Counselor 1 -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col group">
+<div class="overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Admissions Counselor Sarah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="portrait of a friendly professional woman with glasses smiling warmly in a university setting, bright and approachable" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5a7xCitvAgHZ4Lgo4f8vUQovD0zgdtVsvESKGopr3-YeR49FJwFlpUJNPxl3huZqoV3g8wzNnV7f8casxJIAlFJy-WrAro4vfpL6ylxj6QgO9Wdo2ZaYzU2x-RiTdCZVmEGLWdJBQRvWWBfXzHFDw3R4csSuxMOVxnj_XRxc2ka2gOXN0BrQfLp_S08mriA3k72rTQC32Av-LTsIlu2KE7zg8frX8YPyTyyDIXj1hduvagZxGzM5rkPL1m-kXRRsZvJ9Ruidwd1s"/>
+</div>
+<div class="px-2 pb-4">
+<h3 class="font-headline font-extrabold text-2xl text-primary mb-1">Sarah Jenkins</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-4 uppercase tracking-wider">Undergraduate Specialist</p>
+<button class="w-full bg-white text-primary border border-primary-container/20 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors group-hover:shadow-md">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                            Book a 15-min Chat
+                        </button>
+</div>
+</div>
+<!-- Counselor 2 -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col group mt-0 md:mt-12">
+<div class="overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Admissions Counselor Liam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="portrait of a young male admissions officer with a friendly smile, professional attire, standing in a library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcw2gZEylSkdQ8_PZdAlUq75fI15_6QhTVG9wXBBFGiSAKrHSFX0yVUVG8WYknlBphUbooBXbu50Pb4DTPYySnHm-ywKjBY06P5U3haEpi9OC3SJ9elGYAq1S0ga3jh6exSzHC4WSQsjJSeC19JTGz5XdwtJblxwleAbVmm0MBO-ZUJdy4bn2eLt1guHXvee_zjPAVXzMhEybG104NcXO5QLizCfLBGxAXWdLRz9uRj9VwlltKfw0LhruhqUqbYYZ0Og3-fUypaqc"/>
+</div>
+<div class="px-2 pb-4">
+<h3 class="font-headline font-extrabold text-2xl text-primary mb-1">Liam Thorne</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-4 uppercase tracking-wider">International Admissions</p>
+<button class="w-full bg-white text-primary border border-primary-container/20 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors group-hover:shadow-md">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                            Book a 15-min Chat
+                        </button>
+</div>
+</div>
+<!-- Counselor 3 -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col group">
+<div class="overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Admissions Counselor Elena" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="portrait of a confident female admissions specialist with a gentle smile, soft natural lighting in an academic office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAVnDSqce1jhmctnoNTBmO0yotdhBaqt2bpHMkVi-ugn0YtWPk41Vj1rGSXB_PjMsQ8hAbppdXWXVzOYLl_YB1X3e1RsD0cavy6DtxtHQePdyE6Br4tIiLCTKdspz98ArC3rg1Ub4y5iJ95KmEuk70UBBpcTbPiVZWldueKurZoOKTMB1IrXXRnLNW5RQ_blRKhwfIanOffmd-jpEJpCPhvKfAbOll2yCwPrdRKToJXNJ2NOjCro8_xi7Bm3h3VECG7Ohmxu6csFM"/>
+</div>
+<div class="px-2 pb-4">
+<h3 class="font-headline font-extrabold text-2xl text-primary mb-1">Elena Rodriguez</h3>
+<p class="text-on-surface-variant text-sm font-medium mb-4 uppercase tracking-wider">Graduate Programs</p>
+<button class="w-full bg-white text-primary border border-primary-container/20 py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-white transition-colors group-hover:shadow-md">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+                            Book a 15-min Chat
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden" id="message">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="font-headline text-5xl font-extrabold text-primary tracking-tighter mb-6">Send a Message</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8">
+                            Just a quick hello or a deep dive—we're ready when you are. Your future is a conversation away.
+                        </p>
+<div class="space-y-6 mt-12">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<p class="font-medium text-on-surface">Official application status inquiries</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-tertiary-container/10 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<p class="font-medium text-on-surface">Average response time: 2-4 hours</p>
+</div>
+</div>
+<!-- Asymmetric Feature Image -->
+<div class="mt-16 hidden lg:block relative">
+<div class="w-full aspect-video rounded-xl overflow-hidden shadow-2xl rotate-2">
+<img alt="Quinnelle Campus" class="w-full h-full object-cover" data-alt="beautiful historic university architecture with ivy-covered red brick buildings and manicured green lawns under a soft sunset sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2MDrB3Ug13VCkmrxQR-o_VLH6UzM95RBQc4x_JnAJjqGh1UCqxIq7ZMPcStzbhTIKP-16iOcyxHoS7HQ6IzXY5crPOZpgPGgL4um5EliqQwzJ6lsuMxa92hTzPKF1Zd2jPx7xQgs-X2m8HyXHqszs6GzbsPCn7NnIPbmG21MOuDf-l3JaJodS5CghKGwciagvl9yBCfGwq8pfk4H_QXlxkDwpu5x2pGewjAhkTDid9zbK7QS6-LNCn0K-WI_RN6DCsGeCGiHxDSw"/>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 md:p-14 rounded-2xl shadow-xl shadow-stone-200/40">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-widest text-on-surface-variant ml-1">Area of Interest</label>
+<select class="w-full bg-surface-container-high border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary transition-all">
+<option>Undergraduate Studies</option>
+<option>Graduate Programs</option>
+<option>Online &amp; Continuous Learning</option>
+<option>Transfer Admissions</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold uppercase tracking-widest text-on-surface-variant ml-1">Your Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-xl py-4 px-6 focus:ring-2 focus:ring-secondary transition-all resize-none" placeholder="How can we help you today?" rows="5"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary-container to-secondary text-on-primary py-5 rounded-xl font-bold text-lg shadow-lg shadow-primary/20 hover:scale-[1.01] transition-transform" type="button">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Sub-footer -->
+<section class="bg-surface py-20">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="bg-tertiary-container rounded-3xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"></path>
+</svg>
+</div>
+<div class="relative z-10 max-w-xl text-center md:text-left">
+<h2 class="font-headline text-4xl font-extrabold text-white mb-4 tracking-tight">Stay Connected</h2>
+<p class="text-on-tertiary-container text-lg">Receive updates on admission deadlines, campus events, and Quinnelle stories.</p>
+</div>
+<div class="relative z-10 w-full max-w-md">
+<div class="flex gap-2">
+<input class="flex-1 bg-white/10 border border-white/20 rounded-xl py-4 px-6 text-white placeholder-white/50 focus:ring-2 focus:ring-white transition-all outline-none" placeholder="Enter your email" type="email"/>
+<button class="bg-white text-tertiary-container font-bold px-8 py-4 rounded-xl hover:bg-stone-100 transition-colors">Join</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-900 pt-20 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-12 max-w-7xl mx-auto mb-16">
+<div class="col-span-1 md:col-span-1">
+<a href="index.html" class="flex items-center gap-2 text-lg font-bold text-red-900 dark:text-red-500 mb-6 no-underline hover:opacity-90"><img src="assets/favicon.svg" alt="" class="h-8 w-8 rounded-lg object-contain shrink-0" width="32" height="32"/>Quinnelle University</a>
+<p class="text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                    Nurturing the minds that will illuminate the future through a commitment to excellence and tradition.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="programs.html">Programs</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="admissions.html">Admissions</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="campus-life.html">Campus Life</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="contact.html">Contact</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="apply.html">Apply</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Directory</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-red-900 dark:text-red-500 mb-6">Policies</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-400 hover:text-red-700 underline decoration-2 underline-offset-4 text-sm" href="#">Careers</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-8 text-center">
+<p class="text-stone-500 dark:text-stone-400 text-sm">© 2026 Quinnelle University. The Academic Luminary.</p>
+</div>
+</footer>
+
+<script src="app.js" defer></script>
+</body></html>
