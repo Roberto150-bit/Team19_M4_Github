@@ -1,28 +1,31 @@
 # Quinnelle University — static site (Team19_M4)
 
-## GitHub Pages
+## Publish to GitHub Pages (recommended: deploy from branch)
 
-After pushing, open the repository on GitHub and set the Pages source to **GitHub Actions**:
+The site is static HTML at the **repository root** (`index.html`, styles, scripts, `assets/`).
 
-1. **Settings** → **Pages** → **Build and deployment**
-2. Under **Source**, choose **GitHub Actions** (not “Deploy from a branch”).
+1. On GitHub, open **Settings** → **Pages** (left sidebar).
+2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**.
+3. Set **Branch** to `main` and folder **`/ (root)`**, then click **Save**.
 
-The workflow `.github/workflows/pages.yml` publishes the repository root on each push to `main`.
+After a minute or two, the site will be available at:
 
-**Live URL (project site):**  
-[https://Roberto150-bit.github.io/Team19_M4_Github/](https://Roberto150-bit.github.io/Team19_M4_Github/)
+**[https://Roberto150-bit.github.io/Team19_M4_Github/](https://Roberto150-bit.github.io/Team19_M4_Github/)**
 
-If the URL 404s, open **Actions**, confirm the latest **Deploy GitHub Pages** workflow succeeded, then wait a minute and hard-refresh.
+Use a hard refresh (`Ctrl+Shift+R`) if you still see an old version or a 404 right after the first enable.
 
-## Local preview
+### Notes
 
-Open `index.html` in a browser, or serve the folder (e.g. `npx serve .`) so CDN scripts load reliably.
+- **`.nojekyll`** is included so GitHub does not run Jekyll on your files (static HTML/CSS/JS are served as-is).
+- **Tailwind** loads from the official Play CDN in each page; an internet connection is required for styling to apply.
+- **Local preview:** open `index.html` directly, or run a static server in this folder (e.g. `npx --yes serve .`).
 
-## Stack
+## Repo layout
 
-- HTML pages at repo root  
-- `styles.css`, `tailwind.config.js`, `app.js`  
-- Tailwind [Play CDN](https://tailwindcss.com/docs/installation/play-cdn) (requires network)  
-- `assets/favicon.svg`  
-
-File `.nojekyll` disables Jekyll so static files are served as-is.
+| Path | Role |
+|------|------|
+| `index.html`, `*.html` | Pages |
+| `styles.css` | Custom CSS |
+| `tailwind.config.js` | Tailwind theme extension (CDN) |
+| `app.js` | Shared JavaScript |
+| `assets/favicon.svg` | Site / tab icon |
