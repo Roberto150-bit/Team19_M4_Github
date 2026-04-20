@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Connect — Student Hub</title>
+  <meta name="description" content="A simple campus hub for resources, events, and student life. Demo MVP.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Campus Connect home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Campus Connect</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="siteNav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#student-life">Student life</a></li>
+          <li><a href="#prospective">Prospective</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy reveal" data-reveal>
+          <p class="eyebrow">Your campus, one place</p>
+          <h1 id="hero-title">Find what you need, fast</h1>
+          <p class="hero-lead">
+            A lightweight hub for schedules, spaces, and student support. Built as a demo—swap in your real links and copy anytime.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#resources">Browse resources</a>
+            <a class="btn btn-secondary" href="#events">See events</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" data-reveal>
+          <div class="hero-placeholder" role="img" aria-label="Placeholder for hero banner image">
+            <span class="hero-placeholder-label">Hero image / banner</span>
+            <span class="hero-placeholder-hint">Drop a photo or graphic here later</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="about-title">What this is</h2>
+          <p class="section-intro">
+            Campus Connect is a front-end MVP: a single page you can hand off to designers or content owners. Everything here is placeholder text—keep the structure, replace the words.
+          </p>
+        </header>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="resources" aria-labelledby="resources-title">
+      <div class="container">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="resources-title">Campus resources</h2>
+          <p class="section-sub">Short summaries you can expand into full pages later.</p>
+        </header>
+        <ul class="card-grid">
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Study spaces</h3>
+            <p class="card-text">Quiet floors, group rooms, and late-night labs. Reserve a slot or walk in when spots open.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Advising drop-ins</h3>
+            <p class="card-text">Quick questions about majors, credits, or next-term planning. No appointment needed on demo Tuesdays.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Tech &amp; printing</h3>
+            <p class="card-text">Loaner chargers, poster printing, and basic troubleshooting. Bring your student ID at the help desk.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Wellness check-ins</h3>
+            <p class="card-text">Short peer-led sessions for stress, sleep, and focus. Optional; nothing is recorded in this demo.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="student-life" aria-labelledby="student-life-title">
+      <div class="container">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="student-life-title">Student life</h2>
+          <p class="section-sub">Tiles for clubs, hangouts, and low-key traditions.</p>
+        </header>
+        <ul class="tile-grid">
+          <li class="tile reveal" data-reveal>
+            <h3 class="tile-title">Club fair pop-up</h3>
+            <p class="tile-text">Meet five clubs in fifteen minutes. Sticker sheet for anyone who tries.</p>
+          </li>
+          <li class="tile reveal" data-reveal>
+            <h3 class="tile-title">Friday film loop</h3>
+            <p class="tile-text">Student picks, silly intermissions, and cheap snacks. Bring a blanket if the AC runs cold.</p>
+          </li>
+          <li class="tile reveal" data-reveal>
+            <h3 class="tile-title">Intramural chill league</h3>
+            <p class="tile-text">Low-stakes volleyball and ping-pong. Teams form week one; subs welcome all term.</p>
+          </li>
+          <li class="tile reveal" data-reveal>
+            <h3 class="tile-title">Commuter lounge hours</h3>
+            <p class="tile-text">Microwave row, lockers, and a whiteboard for ride shares. Updated weekly on the door.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="prospective" aria-labelledby="prospective-title">
+      <div class="container">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="prospective-title">Prospective students</h2>
+          <p class="section-sub">Starter cards for visits, costs, and first-week tips.</p>
+        </header>
+        <ul class="card-grid">
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Campus tour routes</h3>
+            <p class="card-text">Two loop options: quick twenty minutes or the full hour with library and dining stops.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Cost snapshot</h3>
+            <p class="card-text">Sample numbers only. Use this card to link a real estimator or aid page when ready.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">First week checklist</h3>
+            <p class="card-text">ID photo, Wi-Fi, bus pass, and one fun elective. Keep it scannable on mobile.</p>
+          </li>
+          <li class="card reveal" data-reveal>
+            <h3 class="card-title">Ask a current student</h3>
+            <p class="card-text">Placeholder Q&amp;A block. Replace with a form, calendar, or Discord link in a future version.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="events-title">Featured events</h2>
+          <p class="section-sub">Dates are placeholders—edit in one place when you wire real data.</p>
+        </header>
+        <ul class="event-grid">
+          <li class="event-card reveal" data-reveal>
+            <p class="event-date">Thu, Oct 9, 2026 · 4:00 PM</p>
+            <h3 class="event-title">Welcome back picnic</h3>
+            <p class="event-text">Music on the quad, vegetarian options, and a raffle for bookstore credit (demo prizes).</p>
+          </li>
+          <li class="event-card reveal" data-reveal>
+            <p class="event-date">Wed, Oct 22, 2026 · 7:30 PM</p>
+            <h3 class="event-title">Night market mini</h3>
+            <p class="event-text">Local makers, club booths, and hot drinks. Rain plan moves to the student center atrium.</p>
+          </li>
+          <li class="event-card reveal" data-reveal>
+            <p class="event-date">Sat, Nov 1, 2026 · 10:00 AM</p>
+            <h3 class="event-title">Open studio walk-through</h3>
+            <p class="event-text">See senior projects in progress. Good for photos—ask before you post, as always.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container container-narrow">
+        <header class="section-header reveal" data-reveal>
+          <h2 id="contact-title">Contact</h2>
+          <p class="section-sub">Demo form only—nothing is sent. Fill it out to see validation and a friendly success state.</p>
+        </header>
+
+        <div class="form-card reveal" data-reveal>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Alex Rivera">
+              <p class="field-error" id="nameError" role="alert" aria-live="polite"></p>
+            </div>
+            <div class="form-row">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" autocomplete="email" required maxlength="120" placeholder="you@example.edu">
+              <p class="field-error" id="emailError" role="alert" aria-live="polite"></p>
+            </div>
+            <div class="form-row">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" required minlength="10" maxlength="800" rows="5" placeholder="Ask about tours, resources, or how to swap this copy."></textarea>
+              <p class="field-error" id="messageError" role="alert" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Send message</button>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden role="status" aria-live="polite">
+            <p class="form-success-title">Thanks—that looked good.</p>
+            <p class="form-success-text">In a real build, this would email your team or open a ticket. For this MVP, your message stays in the browser only.</p>
+            <button type="button" class="btn btn-secondary" id="resetFormBtn">Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark brand-mark--sm" aria-hidden="true"></span>
+        <span class="footer-name">Campus Connect</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#student-life">Student life</a></li>
+          <li><a href="#prospective">Prospective</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <p class="footer-disclaimer">
+        Demo / student project: placeholder content and front-end only. No data is stored or transmitted.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
